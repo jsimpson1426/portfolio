@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./../project/project";
+import "./projects.sass";
 
 const Projects = () => {
   let projects = [
@@ -33,7 +34,7 @@ const Projects = () => {
     <div className="projects-div-container">
       <h1 className="projects-h1">Projects</h1>
       {projects.map((p) => (
-        <Project content={p} />
+        <Project key={p.title} content={p} />
       ))}
     </div>
   );
