@@ -6,6 +6,7 @@ const Landing = () => {
   let navLinks = [
     { url: "#about", text: "About" },
     { url: "#projects", text: "Projects" },
+    { url: "#contact", text: "Contact" },
     { url: "/resume", text: "Resume" },
   ];
 

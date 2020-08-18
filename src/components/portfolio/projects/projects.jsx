@@ -3,7 +3,7 @@ import Project from "./../project/project";
 import "./projects.sass";
 
 const Projects = () => {
-  let projects = [
+  const projects = [
     {
       alt: "SudokuSolver",
       title: "Title1",
