@@ -1,10 +1,12 @@
 import React from "react";
 import "./about.sass";
 
-const About = () => {
+const About = ({ id }) => {
   return (
     <div className="about-div-container">
-      <h1 className="about-h1">About Me</h1>
+      <h1 id={id} className="about-h1">
+        About Me
+      </h1>
       <p className="about-p">
         Hi! I'm Josh, a software engineer from Indianapolis, IN.
       </p>

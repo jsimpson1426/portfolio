@@ -2,7 +2,7 @@ import React from "react";
 import ButtonGroup from "../../common/buttonGroup/buttonGroup";
 import "./contact.sass";
 
-const Contact = () => {
+const Contact = ({ id }) => {
   const buttons = [
     {
       text: "Github",
@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <div className="contact-div-container">
-      <h1>Contact Me</h1>
+      <h1 id={id}>Contact Me</h1>
       <h2>Would you like to know more about me?</h2>
       <ButtonGroup buttons={buttons} />
     </div>

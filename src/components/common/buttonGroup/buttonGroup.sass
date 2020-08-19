@@ -31,10 +31,14 @@ $screen-xl-min: 1440px
     
 .button-group-li 
     list-style-type: none
+    padding: 50px 0px 0px 0px
 
 .button-group-a
     text-decoration: none
-    @include sm
+    margin: 0px
+    padding: 25px 0px 0px 0px
+    @include md
+        padding: 0px 0px 0px 0px
         float: right
         display: inline
     
@@ -42,7 +46,10 @@ $screen-xl-min: 1440px
         font-size: 20px
 
 .button-group-p
-    @include sm
+    margin: 0px
+    padding: 0px
+    @include md
+        width: 70%
         float: left
         display: inline
     
@@ -50,4 +57,5 @@ $screen-xl-min: 1440px
         font-size: 20px
 
 .button-group-div
+    
     padding: 20px 0px 0px 0px

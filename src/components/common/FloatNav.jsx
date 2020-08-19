@@ -9,7 +9,11 @@ const FloatNav = ({ links }) => {
           className={navLink.isRoute ? "float-nav-li-route" : "float-nav-li"}
           key={navLink.text}
         >
-          <a className="float-nav-a" href={navLink.url}>
+          <a
+            className="float-nav-a"
+            href={navLink.url}
+            target={navLink.target ? navLink.target : ""}
+          >
             {navLink.text}
           </a>
         </li>

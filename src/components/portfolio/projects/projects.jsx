@@ -2,29 +2,32 @@ import React from "react";
 import Project from "./../project/project";
 import "./projects.sass";
 
-const Projects = () => {
+const Projects = ({ id }) => {
   const projects = [
     {
       alt: "SudokuSolver",
-      title: "Title1",
+      title: "Sudoku Puzzle Solver",
       imgUrl: require("./placeholder.png"),
-      description: "Lorem Ipsum",
+      description:
+        "I used this project as a way to better understand backtracking algorithms. This project takes a solveable sudoku puzzle and fills in the blanks to find the correct answer!",
       projectUrl: "/sudoku",
       githubUrl: "linkPlaceholder",
     },
     {
       alt: "Quick-Ref",
-      title: "Title2",
+      title: "Quick-Ref App",
       imgUrl: require("./placeholder.png"),
-      description: "Lorem Ipsum",
+      description:
+        "Quick-Ref is a content delivery app for reference material. Individuals with admin permissions may create, edit and delete materials and users can log in to access the content.",
       projectUrl: "/quickref",
       githubUrl: "linkPlaceholder",
     },
     {
-      alt: "@t Action",
-      title: "Title3",
+      alt: "At Action Studios",
+      title: "At Action Studios",
       imgUrl: require("./placeholder.png"),
-      description: "Lorem Ipsum",
+      description:
+        "I work with At Action studios to build a website for the comics that they write.",
       projectUrl: "linkPlaceholder",
       githubUrl: "linkPlaceholder",
     },
@@ -32,7 +35,9 @@ const Projects = () => {
 
   return (
     <div className="projects-div-container">
-      <h1 className="projects-h1">Projects</h1>
+      <h1 id={id} className="projects-h1">
+        Projects
+      </h1>
       {projects.map((p) => (
         <Project key={p.title} content={p} />
       ))}
