@@ -11,17 +11,21 @@ const Landing = ({ id }) => {
   ];
 
   return (
-    <div id={id} className="landing-div-container">
-      <div className="landing-div-left">
-        <h1 className="landing-h1">Josh Simpson</h1>
-        <FloatNav links={navLinks}></FloatNav>
-      </div>
-      <div className="landing-div-right">
-        <img
-          className="landing-img"
-          src={require("./joshSimpson.jpg")}
-          alt="Josh Simpson"
-        />
+    <div className="landing-div-bg1">
+      <div className="landing-div-bg2">
+        <div id={id} className="landing-div-container">
+          <div className="landing-div-left">
+            <h1 className="landing-h1">Josh Simpson</h1>
+            <FloatNav links={navLinks}></FloatNav>
+          </div>
+          <div className="landing-div-right">
+            <img
+              className="landing-img"
+              src={require("./joshSimpson.jpg")}
+              alt="Josh Simpson"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

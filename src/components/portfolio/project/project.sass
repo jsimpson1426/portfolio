@@ -3,6 +3,7 @@ $screen-sm-min: 576px
 $screen-md-min: 768px
 $screen-lg-min: 1024px
 $screen-xl-min: 1440px
+$transform: -2deg
     
 @mixin xsm 
     @media (min-width: $screen-xsm-min)
@@ -25,10 +26,22 @@ $screen-xl-min: 1440px
         @content
 
 .project-div-container
-    width: 90%
+    width: 80%
     margin: auto
-    padding: 0px 0px 50px 0px
+    padding: 10px 0px 20px 0px
     text-align: left
+    transform: rotate($transform)
+
+.project-div-bg2
+    background-color: white
+    border-radius: 5px
+    box-shadow: 5px 10px 13px black
+    transform: rotate(-$transform)
+
+.project-div-bg1
+    background-color: white
+    border-radius: 5px
+    box-shadow: 5px 10px 13px black
 
 .project-img
     width: 100%
