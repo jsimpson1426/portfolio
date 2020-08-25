@@ -27,7 +27,6 @@ const Contact = ({ id }) => {
       <div className="contact-div-bg2">
         <div className="contact-div-container">
           <h1 id={id}>Contact Me</h1>
-          <h2>Would you like to know more about me?</h2>
           <ButtonGroup buttons={buttons} />
         </div>
       </div>

@@ -3,7 +3,7 @@ $screen-sm-min: 576px
 $screen-md-min: 768px
 $screen-lg-min: 1024px
 $screen-xl-min: 1440px
-$transform: 2deg
+$transform: -2deg
     
 @mixin xsm 
     @media (min-width: $screen-xsm-min)
@@ -28,8 +28,10 @@ $transform: 2deg
 .contact-div-container
     width: 80%
     margin: auto
-    padding: 100px 0px 200px 0px
+    padding: 20px 0px 50px 0px
     transform: rotate($transform)
+    @include md
+        padding: 50px 0px 100px 0px
 
 .contact-div-bg2
     background-color: white

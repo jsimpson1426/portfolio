@@ -3,6 +3,7 @@ $screen-sm-min: 576px
 $screen-md-min: 768px
 $screen-lg-min: 1024px
 $screen-xl-min: 1440px
+$transform: -2deg
     
 @mixin xsm 
     @media (min-width: $screen-xsm-min)
@@ -24,9 +25,22 @@ $screen-xl-min: 1440px
     @media (min-width: $screen-xl-min)
         @content
 
+.about-div-bg2
+    background-color: white
+    border-radius: 5px
+    box-shadow: 5px 10px 13px black
+    transform: rotate(-$transform)
+
+.about-div-bg1
+    background-color: white
+    border-radius: 5px
+    box-shadow: 5px 10px 13px black
+
 .about-div-container
     width: 80%
     margin: auto
-    padding: 0px 0px 0px 0px
+    padding: 20px 0px 35px 0px
     text-align: left
+    transform: rotate($transform)
+
     

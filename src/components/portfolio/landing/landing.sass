@@ -1,6 +1,7 @@
 $screen-xsm-min: 360px
 $screen-sm-min: 576px
 $screen-md-min: 768px
+$screen-xm-min: 876px
 $screen-lg-min: 1024px
 $screen-xl-min: 1440px
 $transform: -2deg
@@ -15,6 +16,10 @@ $transform: -2deg
 
 @mixin md 
     @media (min-width: $screen-md-min)
+        @content
+
+@mixin xmd 
+    @media (min-width: $screen-xm-min)
         @content
    
 @mixin lg 
@@ -40,12 +45,13 @@ $transform: -2deg
 
 .landing-div-left
     @include landing-div
-    @include sm
+    @include xmd
         display: inline-block
 
 .landing-div-right
+    padding: 0px
     @include landing-div
-    @include sm
+    @include xmd
         display: inline-block
         padding: 4px 5px 4px 50px
 
@@ -53,21 +59,36 @@ $transform: -2deg
     align-items: center
     padding: 100px 0px 100px 0px
     background-size: 100% 100%
+    // border-style: solid
+    // border-width: 5px
+    // border-color: black
+    // border-radius: 50%
     //transform: rotate($transform)
 
 // .landing-div-bg2
-//     background-color: white
+//     width: 0;
+//     height: 0;
+//     border-left: 50px solid transparent;
+//     border-right: 50px solid transparent;
+//     border-bottom: 100px solid red;
+//     background-color: #e8f7ff
 //     border-radius: 5px
 //     box-shadow: 5px 10px 13px black
 //     transform: rotate(-$transform)
 
 .landing-div-bg1
-    background-color: white
+    background-color: #e0deff
     border-radius: 50%
+    // border-style: solid
+    // border-width: 5px
+    // border-color: black
     box-shadow: 5px 10px 13px black
     
 .landing-h1
     text-align: center
+    color: white
+    -webkit-text-stroke-width: 2px
+    -webkit-text-stroke-color: black
     @include lg
         font-size: 34pt
 
