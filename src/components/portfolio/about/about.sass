@@ -1,35 +1,10 @@
-$screen-xsm-min: 360px
-$screen-sm-min: 576px
-$screen-md-min: 768px
-$screen-lg-min: 1024px
-$screen-xl-min: 1440px
-$transform: -2deg
-    
-@mixin xsm 
-    @media (min-width: $screen-xsm-min)
-        @content
-
-@mixin sm 
-    @media (min-width: $screen-sm-min)
-        @content
-
-@mixin md 
-    @media (min-width: $screen-md-min)
-        @content
-   
-@mixin lg 
-    @media (min-width: $screen-lg-min)
-        @content
-
-@mixin xl 
-    @media (min-width: $screen-xl-min)
-        @content
+@use "src/Breakpoints" as bp
 
 .about-div-bg2
     background-color: white
     border-radius: 5px
     box-shadow: 5px 10px 13px black
-    transform: rotate(-$transform)
+    transform: rotate(-(bp.$transform))
 
 .about-div-bg1
     background-color: white
@@ -41,6 +16,6 @@ $transform: -2deg
     margin: auto
     padding: 20px 0px 35px 0px
     text-align: left
-    transform: rotate($transform)
+    transform: rotate(bp.$transform)
 
     

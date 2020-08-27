@@ -39,7 +39,7 @@ const Projects = ({ id }) => {
         Projects
       </h1>
       {projects.map((p) => (
-        <div class="projects-div-section">
+        <div key={p.title} className="projects-div-section">
           <Project key={p.title} content={p} />
         </div>
       ))}

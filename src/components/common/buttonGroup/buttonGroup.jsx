@@ -9,7 +9,7 @@ const ButtonGroup = ({ buttons }) => {
           <li className="button-group-li" key={button.description}>
             <div className="button-group-div">
               <p className="button-group-p">{button.description}</p>
-              <a className="button-group-a" href={button.url} target="_blank">
+              <a className="button-group-a" href={button.url}>
                 {button.text}
               </a>
             </div>
