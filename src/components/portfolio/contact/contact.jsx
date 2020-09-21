@@ -26,7 +26,9 @@ const Contact = ({ id }) => {
     <div className="contact-div-bg1">
       <div className="contact-div-bg2">
         <div className="contact-div-container">
-          <h1 id={id}>Contact Me</h1>
+          <h1 id={id} className="contact-h1">
+            Contact Me
+          </h1>
           <ButtonGroup buttons={buttons} />
         </div>
       </div>

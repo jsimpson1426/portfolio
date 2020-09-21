@@ -4,8 +4,10 @@
     width: 80%
     margin: auto
     padding: 10px 0px 50px 0px
-    text-align: left
+    //text-align: left
     transform: rotate(bp.$transform)
+    @include bp.md
+        width: 90%
 
 .project-div-bg2
     background-color: white
@@ -19,10 +21,18 @@
     box-shadow: 5px 10px 13px black
 
 .project-img
-    width: 240px
+    width: 100%
+    @include bp.sm
+        display: block
+        margin: auto
+        width: 75%
+    @include bp.md
+        display: block
+        margin: auto
+        width: 100%
 
 .project-p
-    font-size: 14px
+    font-size: 16px
     @include bp.lg
         font-size: 20px
 
@@ -30,24 +40,30 @@ p
     margin-block-start: 0px
 
 .project-a
-    text-decoration: none
-    padding: 0px 20px 0px 0px
-    font-size: 14px
-    @include bp.lg
-        font-size: 20px
+    //text-decoration: none
+    //padding: 0px 20px 0px 0px
+    //font-size: 16px
+    // @include bp.lg
+    //     font-size: 20px
 
 .project-ul
     margin: auto
     padding: 0px
     list-style-type: none
-    display: inline-block
+    //display: inline-block
+    @include bp.md
+        display: flex
 
 .project-li-left
-    display: inline
-    float: left
+    @include bp.md
+        display: inline
+        float: left
 
 .project-li-right
-    display: inline
-    margin: auto
-    width: 50%
-    padding: 60px 60px 60px 60px
+    padding: 20px 0px 0px 0px
+    @include bp.md
+        display: inline
+        //float: right
+        //margin: auto
+        width: 100%
+        padding: 0px 0px 0px 20px

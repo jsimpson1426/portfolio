@@ -35,9 +35,11 @@ const Projects = ({ id }) => {
 
   return (
     <div className="projects-div-container">
-      <h1 id={id} className="projects-h1">
-        Projects
-      </h1>
+      <div className="projects-div-headerbg">
+        <h1 id={id} className="projects-h1">
+          Projects
+        </h1>
+      </div>
       {projects.map((p) => (
         <div key={p.title} className="projects-div-section">
           <Project key={p.title} content={p} />

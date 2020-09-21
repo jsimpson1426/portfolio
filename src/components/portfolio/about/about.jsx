@@ -22,14 +22,18 @@ const About = ({ id }) => {
             <p className="about-p">
               The stack that I have been working with recently includes:
             </p>
-            <ul className="about-ul">
-              <li className="about-li">JavaScript</li>
-              <li className="about-li">HTML & CSS/SASS</li>
-              <li className="about-li">React</li>
-              <li className="about-li">Node.js</li>
-              <li className="about-li">MongoDB</li>
-              <li className="about-li">Heroku</li>
-            </ul>
+            <div className="about-div-lists">
+              <ul className="about-ul">
+                <li className="about-li">JavaScript</li>
+                <li className="about-li">HTML & CSS/SASS</li>
+                <li className="about-li">React</li>
+              </ul>
+              <ul className="about-ul">
+                <li className="about-li">Node.js</li>
+                <li className="about-li">MongoDB</li>
+                <li className="about-li">Heroku</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
