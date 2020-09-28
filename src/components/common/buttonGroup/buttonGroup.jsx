@@ -1,5 +1,6 @@
 import React from "react";
 import "./buttonGroup.sass";
+import SlideButton from "./../slideButton/slideButton";
 
 const ButtonGroup = ({ buttons }) => {
   return (
@@ -9,9 +10,11 @@ const ButtonGroup = ({ buttons }) => {
           <li className="button-group-li" key={button.description}>
             <div className="button-group-div">
               <p className="button-group-p">{button.description}</p>
-              <a className="button-group-a btn btn-primary" href={button.url}>
-                {button.text}
-              </a>
+              <div className="button-group-div-link">
+                <a className="button-group-a" href={button.link}>
+                  {button.text}
+                </a>
+              </div>
             </div>
           </li>
         ))}

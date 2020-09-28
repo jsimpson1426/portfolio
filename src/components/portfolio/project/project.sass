@@ -1,4 +1,5 @@
 @use "src/Breakpoints" as bp
+@use "src/globalStyles" as style
 
 .project-div-container
     width: 80%
@@ -20,6 +21,10 @@
     border-radius: 5px
     box-shadow: 5px 10px 13px black
 
+.project-div-buttons
+    float: left
+
+
 .project-img
     width: 100%
     @include bp.sm
@@ -40,24 +45,27 @@ p
     margin-block-start: 0px
 
 .project-a
-    //text-decoration: none
-    //padding: 0px 20px 0px 0px
-    //font-size: 16px
-    // @include bp.lg
-    //     font-size: 20px
+    margin: 0px 10px 0px 0px
+    font-size: 16px
+    @include style.circle-button
+        padding: 6px
+    @include bp.lg
+        font-size: 20px
 
 .project-ul
     margin: auto
-    padding: 0px
+    padding: 0px 0px 50px 0px
     list-style-type: none
     //display: inline-block
     @include bp.md
+        padding: 0px 0px 0px 0px
         display: flex
 
 .project-li-left
     @include bp.md
         display: inline
         float: left
+        width: 75%
 
 .project-li-right
     padding: 20px 0px 0px 0px
