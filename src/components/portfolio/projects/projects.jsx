@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./../project/project";
 import "./projects.sass";
+import SectionHeader from "../../common/sectionHeader/sectionHeader";
 
 const Projects = ({ id }) => {
   const projects = [
@@ -35,11 +36,7 @@ const Projects = ({ id }) => {
 
   return (
     <div className="projects-div-container">
-      <div className="projects-div-headerbg">
-        <h1 id={id} className="projects-h1">
-          Projects
-        </h1>
-      </div>
+      <SectionHeader id={id} text="Projects"></SectionHeader>
       {projects.map((p) => (
         <div key={p.title} className="projects-div-section">
           <Project key={p.title} content={p} />

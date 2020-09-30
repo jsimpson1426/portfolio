@@ -1,16 +1,31 @@
+@use "src/Breakpoints" as bp
+@use "src/globalStyles" as style
+    
 .sectionheader-h1
     text-align: center
-    //vertical-align: middle
+    @include style.font-header
 
 .sectionheader-div-headerbg
-    width: 50%
     background-color: #e0deff
     border-radius: 50%
     border-style: solid
     border-width: 1px
     border-color: black
+    padding: 10px 0px 10px 0px
     box-shadow: 5px 10px 0 black
+    width: 60%
+    @include bp.xsm
+        padding: 12px 0px 12px 0px
+        width: 45%
     @include bp.sm
-        width: 35%
+        padding: 16px 0px 16px 0px
+        width: 40%
+    @include bp.sm
+        padding: 16px 0px 16px 0px
+        width: 37%
+    @include bp.lg
+        padding: 20px 0px 20px 0px
+        width: 30%
     @include bp.xl
-        width: 20%
+        padding: 25px 0px 25px 0px
+        width: 24%

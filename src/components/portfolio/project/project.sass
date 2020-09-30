@@ -24,33 +24,38 @@
 .project-div-buttons
     float: left
 
+.project-h2
+    margin-bottom: 20px
+    @include bp.lg
+        margin-bottom: 30px
+    @include bp.xl
+        margin-bottom: 40px
+    @include style.font-sub-header
+        
 
 .project-img
     width: 100%
-    @include bp.sm
-        display: block
-        margin: auto
-        width: 75%
     @include bp.md
         display: block
-        margin: auto
         width: 100%
+    @include bp.lg
+        display: block
+        width: 300px
+    @include bp.xl
+        display: block
+        width: 360px
 
 .project-p
-    font-size: 16px
-    @include bp.lg
-        font-size: 20px
+    @include style.font-body
 
 p
     margin-block-start: 0px
 
 .project-a
     margin: 0px 10px 0px 0px
-    font-size: 16px
+    @include style.font-a
     @include style.circle-button
         padding: 6px
-    @include bp.lg
-        font-size: 20px
 
 .project-ul
     margin: auto
@@ -65,7 +70,7 @@ p
     @include bp.md
         display: inline
         float: left
-        width: 75%
+        max-width: 50%
 
 .project-li-right
     padding: 20px 0px 0px 0px

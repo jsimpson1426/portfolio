@@ -6,29 +6,29 @@
     
 .button-group-li 
     list-style-type: none
-    padding: 0px 0px 50px 0px
+    padding: 0px 0px 20px 0px
 
 .button-group-a
+
+    @include style.font-a
     @include style.circle-button
         margin: auto
     @include bp.md
         float: right
         display: inline
     
-    @include bp.lg    
-        font-size: 20px
 
 .button-group-p
     margin: 0px
-    padding: 0px
+    padding: 0px 0px 20px 0px
+    @include style.font-body
     @include bp.md
         width: 70%
         float: left
         display: inline
-    
-    @include bp.lg    
-        font-size: 20px
 
 .button-group-div
-    
     padding: 20px 0px 0px 0px
+
+.button-group-div-link
+    display: flex

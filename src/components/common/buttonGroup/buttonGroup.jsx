@@ -1,6 +1,5 @@
 import React from "react";
 import "./buttonGroup.sass";
-import SlideButton from "./../slideButton/slideButton";
 
 const ButtonGroup = ({ buttons }) => {
   return (

@@ -1,12 +1,11 @@
 import React from "react";
 import "./about.sass";
+import SectionHeader from "../../common/sectionHeader/sectionHeader";
 
 const About = ({ id }) => {
   return (
     <div className="about-div-container">
-      <h1 id={id} className="about-h1">
-        About Me
-      </h1>
+      <SectionHeader id={id} text="About Me"></SectionHeader>
       <div className="about-div-bg1">
         <div className="about-div-bg2">
           <div className="about-div-content">

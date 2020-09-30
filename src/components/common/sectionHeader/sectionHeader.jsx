@@ -1,10 +1,11 @@
 import React from "react";
+import "./sectionHeader.sass";
 
-const SectionHeader = () => {
+const SectionHeader = ({ id, text }) => {
   return (
     <div className="sectionheader-div-headerbg">
       <h1 id={id} className="sectionheader-h1">
-        Projects
+        {text}
       </h1>
     </div>
   );

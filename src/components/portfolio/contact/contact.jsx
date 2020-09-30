@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonGroup from "../../common/buttonGroup/buttonGroup";
 import "./contact.sass";
+import SectionHeader from "../../common/sectionHeader/sectionHeader";
 
 const Contact = ({ id }) => {
   const buttons = [
@@ -23,13 +24,13 @@ const Contact = ({ id }) => {
   ];
 
   return (
-    <div className="contact-div-bg1">
-      <div className="contact-div-bg2">
-        <div className="contact-div-container">
-          <h1 id={id} className="contact-h1">
-            Contact Me
-          </h1>
-          <ButtonGroup buttons={buttons} />
+    <div className="contact-div-container">
+      <SectionHeader id={id} text="Contact Me"></SectionHeader>
+      <div className="contact-div-bg1">
+        <div className="contact-div-bg2">
+          <div className="contact-div-content">
+            <ButtonGroup buttons={buttons} />
+          </div>
         </div>
       </div>
     </div>

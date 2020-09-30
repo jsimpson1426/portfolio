@@ -1,3 +1,5 @@
+@use "/Breakpoints" as bp
+
 @mixin circle-button
     color: Black
     text-align: center
@@ -15,9 +17,55 @@
     -moz-transition: font-weight 0.08s, ease .08s
     transition: font-weight .08s, ease .08s
     @content
+    @include bp.xl
+        width: 110px
 
     &:hover
         box-shadow: inset 0 0 0 2px #D80286
         text-decoration: none
         color: black
         font-weight: bold
+
+@mixin font-body
+    font-size: 16px
+    @include bp.xsm
+        font-size: 18px
+    @include bp.lg
+        font-size: 18px
+    @include bp.xl
+        font-size: 21px
+
+@mixin font-header
+    font-weight: bold
+    font-size: 26px
+    @include bp.xsm
+        font-size: 26px
+    @include bp.sm
+        font-size: 28px
+    @include bp.md
+        font-size: 30px
+    @include bp.lg
+        font-size: 32px
+    @include bp.xl
+        font-size: 34px
+
+@mixin font-sub-header
+    font-weight: bold
+    font-size: 24px
+    @include bp.xsm
+        font-size: 24px
+    @include bp.sm
+        font-size: 26px
+    @include bp.md
+        font-size: 28px
+    @include bp.lg
+        font-size: 30px
+    @include bp.xl
+        font-size: 32px
+
+@mixin font-a
+    font-size: 14px
+    @include bp.lg
+        font-size: 18px
+    @include bp.xl
+        font-size: 22px

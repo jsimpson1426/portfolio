@@ -18,7 +18,11 @@ html {
 }
 
 body {
-  background-image: url("./squiggle-boi-social.png");
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./squiggle-boi-social.png");
 }
 
 .root {

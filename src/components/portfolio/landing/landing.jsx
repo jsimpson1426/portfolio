@@ -1,5 +1,5 @@
 import React from "react";
-import FloatNav from "../../common/FloatNav";
+import FloatNav from "../../common/FloatNav/FloatNav";
 import "./landing.sass";
 
 const Landing = ({ id }) => {
