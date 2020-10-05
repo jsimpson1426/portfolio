@@ -19,7 +19,7 @@ const Contact = ({ id }) => {
       text: "Email",
       description:
         "My email is simpsonjoshuam@gmail.com if you have any questions.",
-      url: "/mailto:simpsonjoshuam@gmail.com",
+      url: "mailto:simpsonjoshuam@gmail.com",
     },
   ];
 

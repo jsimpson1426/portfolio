@@ -1,4 +1,6 @@
 @use "src/Breakpoints" as bp
+@use "src/globalStyles" as style
+
 $padding: 3px 7px 3px 7px
 
 .float-nav-ul
@@ -16,5 +18,9 @@ $padding: 3px 7px 3px 7px
 
 .float-nav-a
     text-decoration: none
-    @include bp.lg
-        font-size: 20px
+    color: #005EC2
+    @include style.font-a
+
+.float-nav-a:hover
+    color: #00346B
+    text-decoration: none

@@ -1,5 +1,18 @@
 @use "/Breakpoints" as bp
 
+@font-face 
+    font-family: friendly
+    src: url("./fonts/friendly.otf")
+
+@font-face 
+    font-family: MilkyNice
+    src: url("./fonts/MilkyNice.ttf")
+
+@font-face 
+    font-family: titleFont
+    src: url("./fonts/Fifth-Grader.ttf")
+
+
 @mixin circle-button
     color: Black
     text-align: center
@@ -27,6 +40,7 @@
         font-weight: bold
 
 @mixin font-body
+    font-family: MilkyNice
     font-size: 16px
     @include bp.xsm
         font-size: 18px
@@ -35,35 +49,44 @@
     @include bp.xl
         font-size: 21px
 
-@mixin font-header
-    font-weight: bold
-    font-size: 26px
-    @include bp.xsm
-        font-size: 26px
-    @include bp.sm
-        font-size: 28px
-    @include bp.md
-        font-size: 30px
+@mixin font-title
+    font-family: titleFont
+    font-size: 40pt
     @include bp.lg
-        font-size: 32px
-    @include bp.xl
+        font-size: 54pt
+
+@mixin font-header
+    font-family: friendly
+    font-weight: bold
+    font-size: 34px
+    @include bp.xsm
         font-size: 34px
+    @include bp.sm
+        font-size: 38px
+    @include bp.md
+        font-size: 45px
+    @include bp.lg
+        font-size: 50px
+    @include bp.xl
+        font-size: 50px
 
 @mixin font-sub-header
+    font-family: MilkyNice
     font-weight: bold
     font-size: 24px
     @include bp.xsm
-        font-size: 24px
-    @include bp.sm
         font-size: 26px
-    @include bp.md
-        font-size: 28px
-    @include bp.lg
+    @include bp.sm
         font-size: 30px
-    @include bp.xl
+    @include bp.md
         font-size: 32px
+    @include bp.lg
+        font-size: 35px
+    @include bp.xl
+        font-size: 38px
 
 @mixin font-a
+    font-family: MilkyNice
     font-size: 14px
     @include bp.lg
         font-size: 18px
