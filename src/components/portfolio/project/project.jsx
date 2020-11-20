@@ -22,10 +22,10 @@ class Project extends Component {
               <li className="project-li-right">
                 <p className="project-p">{content.description}</p>
                 <div className="project-div-buttons">
-                  <a className="project-a" href={content.projectUrl}>
+                  <a className="project-a" href={content.projectUrl} target="_blank">
                     View
                   </a>
-                  <a className="project-a" href={content.githubUrl}>
+                  <a className="project-a" href={content.githubUrl} target="_blank">
                     GitHub
                   </a>
                 </div>

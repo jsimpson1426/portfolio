@@ -7,7 +7,7 @@ const Landing = ({ id }) => {
     { url: "#about", text: "About" },
     { url: "#projects", text: "Projects" },
     { url: "#contact", text: "Contact" },
-    { url: "/logo512.png", text: "Resume", target: "_blank" },
+    { url: "/resume.pdf", text: "Resume", target: "_blank" },
   ];
 
   return (
