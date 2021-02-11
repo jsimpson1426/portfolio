@@ -1,17 +1,16 @@
 @use "/Breakpoints" as bp
 
-@font-face 
+@font-face
     font-family: friendly
     src: url("./fonts/friendly.otf")
 
-@font-face 
+@font-face
     font-family: MilkyNice
     src: url("./fonts/MilkyNice.ttf")
 
-@font-face 
+@font-face
     font-family: titleFont
     src: url("./fonts/Fifth-Grader.ttf")
-
 
 @mixin circle-button
     color: Black
@@ -51,7 +50,9 @@
 
 @mixin font-title
     font-family: titleFont
-    font-size: 40pt
+    font-size: 32pt
+    @include bp.xsm
+        font-size: 40pt
     @include bp.lg
         font-size: 54pt
 

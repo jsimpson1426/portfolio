@@ -22,16 +22,16 @@ const Projects = ({ id }) => {
         "Quick-Ref is a content delivery app for reference material. Individuals with admin permissions may create, edit and delete materials and users can log in to access the content. This app is in progress and not yet complete. The front-end is funtional, but not every feature is complete.",
       projectUrl: "https://sleepy-fortress-68982.herokuapp.com/",
       githubUrl: "https://github.com/jsimpson1426/quick-ref",
+    },
+    {
+      alt: "Crisis Response Leader Training",
+      title: "Crisis Response Leader Training",
+      imgUrl: require("./crlt.png"),
+      description:
+        "This was a contract with Crisis Response Leader Training. I assisted with their existing site and developed the front-end for their new web app. If you would like to know more about this project then you can contact me with the info below.",
+      projectUrl: "NA",
+      githubUrl: "NA",
     }
-    // {
-    //   alt: "At Action Studios",
-    //   title: "At Action Studios",
-    //   imgUrl: require("./placeholder.png"),
-    //   description:
-    //     "I work with At Action studios to build a website for the comics that they write.",
-    //   projectUrl: "linkPlaceholder",
-    //   githubUrl: "linkPlaceholder",
-    // },
   ];
 
   return (
