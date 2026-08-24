@@ -1,0 +1,83 @@
+//@import 'Breakpoints', 'globalStyles'
+
+.project-div-container
+    width: 80%
+    margin: auto
+    padding: 10px 0px 50px 0px
+    //text-align: left
+    transform: rotate($transform)
+    @include md
+        width: 90%
+
+.project-div-bg2
+    background-color: white
+    border-radius: 5px
+    box-shadow: 5px 10px 13px black
+    transform: rotate(-($transform))
+
+.project-div-bg1
+    background-color: white
+    border-radius: 5px
+    box-shadow: 5px 10px 13px black
+
+//@import 'Breakpoints', 'globalStyles'
+
+.project-div-buttons
+    float: left
+
+.project-h2
+    margin-bottom: 20px
+    @include lg
+        margin-bottom: 30px
+    @include xl
+        margin-bottom: 40px
+    @include font-sub-header
+
+.project-img
+    width: 100%
+    border: 2px solid black
+    @include md
+        display: block
+        width: 100%
+    @include lg
+        display: block
+        width: 300px
+    @include xl
+        display: block
+        width: 360px
+
+.project-p
+    @include font-body
+
+p
+    margin-block-start: 0px
+
+.project-a
+    margin: 0px 10px 0px 0px
+    @include font-a
+    @include circle-button
+        padding: 6px
+
+.project-ul
+    margin: auto
+    padding: 0px 0px 50px 0px
+    list-style-type: none
+    //display: inline-block
+    @include md
+        padding: 0px 0px 0px 0px
+        display: flex
+
+.project-li-left
+    @include md
+        display: inline
+        float: left
+        max-width: 50%
+
+.project-li-right
+    padding: 20px 0px 0px 0px
+    @include md
+        display: inline
+        //float: right
+        //margin: auto
+        width: 100%
+        padding: 0px 0px 0px 20px

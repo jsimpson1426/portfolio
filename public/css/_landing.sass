@@ -1,0 +1,42 @@
+//@import 'Breakpoints', 'globalStyles'
+
+@mixin landing-div
+    text-align: center
+    vertical-align: middle
+    padding: 4px 0px 4px 0px
+    justify-content: center
+
+.landing-img
+    width: 80%
+    border-radius: 50%
+    box-shadow: 6px 12px 4px #999999
+    @include xsm
+        width: 240px
+
+.landing-div-left
+    @include landing-div
+    @include xmd
+        display: inline-block
+
+.landing-div-right
+    padding: 0px
+    @include landing-div
+    @include xmd
+        display: inline-block
+        padding: 4px 5px 4px 50px
+
+.landing-div-container
+    align-items: center
+    padding: 100px 0px 100px 0px
+
+.landing-div-bg1
+    background-color: #e0deff
+    border-radius: 50%
+    box-shadow: 5px 10px 13px black
+
+.landing-h1
+    text-align: center
+    // color: white
+    // -webkit-text-stroke-width: 2px
+    // -webkit-text-stroke-color: black
+    @include font-title

@@ -1,0 +1,95 @@
+//@import 'Breakpoints'
+
+@font-face
+    font-family: friendly
+    src: url("./../assets/fonts/friendly.otf")
+
+@font-face
+    font-family: MilkyNice
+    src: url("./../assets/fonts/MilkyNice.ttf")
+
+@font-face
+    font-family: titleFont
+    src: url("./../assets/fonts/Fifth-Grader.ttf")
+
+@mixin circle-button
+    color: Black
+    text-align: center
+    border: 2px solid rgb(216, 2, 134)
+    border-radius: 8px
+    width: 90px
+    padding: 8px
+    cursor: pointer
+    box-shadow: inset 0 0 0 0 #D80286
+    float: right
+    display: inline
+    text-decoration: none
+    color: black
+    -webkit-transition: font-weight .08s, ease .08s
+    -moz-transition: font-weight 0.08s, ease .08s
+    transition: font-weight .08s, ease .08s
+    @content
+    @include xl
+        width: 110px
+
+    &:hover
+        box-shadow: inset 0 0 0 2px #D80286
+        text-decoration: none
+        color: black
+        font-weight: bold
+
+@mixin font-body
+    font-family: MilkyNice
+    font-size: 16px
+    @include xsm
+        font-size: 18px
+    @include lg
+        font-size: 18px
+    @include xl
+        font-size: 21px
+
+@mixin font-title
+    font-family: titleFont
+    font-size: 32pt
+    @include xsm
+        font-size: 40pt
+    @include lg
+        font-size: 54pt
+
+@mixin font-header
+    font-family: friendly
+    font-weight: bold
+    font-size: 34px
+    @include xsm
+        font-size: 34px
+    @include sm
+        font-size: 38px
+    @include md
+        font-size: 45px
+    @include lg
+        font-size: 50px
+    @include xl
+        font-size: 50px
+
+@mixin font-sub-header
+    font-family: MilkyNice
+    font-weight: bold
+    font-size: 24px
+    @include xsm
+        font-size: 26px
+    @include sm
+        font-size: 30px
+    @include md
+        font-size: 32px
+    @include lg
+        font-size: 35px
+    @include xl
+        font-size: 38px
+
+@mixin font-a
+    font-family: MilkyNice
+    font-size: 14px
+    @include lg
+        font-size: 18px
+    @include xl
+        font-size: 22px
